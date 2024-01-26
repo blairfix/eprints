@@ -1,4 +1,0 @@
-#!/bin/bash
-
-nvim $1 -u /home/eprints/.config/nvim/init.vim 
-

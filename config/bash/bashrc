@@ -66,10 +66,8 @@ fi
 # fzf fuzzy finder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-
-# use radian for R
-alias "R=radian"
-
+# v
+alias v='nvim'
 
 # add path
 export PATH=/home/eprints/bin:$PATH
