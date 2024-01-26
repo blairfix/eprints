@@ -18,12 +18,12 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # use fd for directory completion
 _fzf_compgen_path() {
-  fd  --follow --exclude ".git" . "$1"
+  fdfind  --follow --exclude ".git" . "$1"
 }
 
 # Use fd to generate the list for directory completion
 _fzf_compgen_dir() {
-  fd --type d  --follow --exclude ".git" --exclude "R" . "$1"
+  fdfind --type d  --follow --exclude ".git" --exclude "R" . "$1"
 }
 
 
