@@ -1,13 +1,13 @@
 # Setup fzf
-if [[ ! "$PATH" == */home/blair/.fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/home/blair/.fzf/bin"
+if [[ ! "$PATH" == */home/eprints/.fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}/home/eprints/.fzf/bin"
 fi
 
 # Auto-completion
-[[ $- == *i* ]] && source "/home/blair/.fzf/shell/completion.bash" 2> /dev/null
+[[ $- == *i* ]] && source "/home/eprints/.fzf/shell/completion.bash" 2> /dev/null
 
 # Key bindings
-source "/home/blair/.fzf/shell/key-bindings.bash"
+source "/home/eprints/.fzf/shell/key-bindings.bash"
 
 
 # Set ripgrep as the default source for fzf

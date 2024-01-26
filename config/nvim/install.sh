@@ -7,7 +7,7 @@ mkdir -p $config
 cp init.vim $config
 
 # copy scripts
-cp gvim v /home/blair/bin
+cp gvim v /home/eprints/bin
 
 # download themes
 cd ~/Downloads

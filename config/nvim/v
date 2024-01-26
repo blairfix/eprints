@@ -1,4 +1,4 @@
 #!/bin/bash
 
-nvim $1 -u /home/blair/.config/nvim/init.vim 
+nvim $1 -u /home/eprints/.config/nvim/init.vim 
 
