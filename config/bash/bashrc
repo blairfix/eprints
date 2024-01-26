@@ -30,7 +30,8 @@ case "$TERM" in
 esac
 
 # terminal prompt
-PS1='\[\033[01;34m\]\W\[\033[00m\]\$ '
+#PS1='\[\033[01;34m\]\W\[\033[00m\]\$ '
+PS1="\u:\w\$ "
 
 # color output for ls and grep
 if [ -x /usr/bin/dircolors ]; then
