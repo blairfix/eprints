@@ -1,4 +1,4 @@
-# blair's bash config
+# eprints's bash config
 
 # If not running interactively, don't do anything
 case $- in
@@ -72,23 +72,8 @@ alias "R=radian"
 
 
 # add path
-export PATH=/home/blair/cloud_work/bin:$PATH
-export PATH=/home/blair/.local/bin:$PATH
-export PATH=/home/blair/bin:$PATH
+export PATH=/home/eprints/bin:$PATH
 
 # colors
-eval $(env TERM=xterm256-color dircolors /home/blair/.config/dircolors.txt)
-
-# firefox wayland
-if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
-    export MOZ_ENABLE_WAYLAND=1
-fi
-
-
-# copy to clipboard
-if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
-    alias "cs=wl-copy"
-else
-    alias "cs=xclip -selection clipboard"
-fi
+eval $(env TERM=xterm256-color dircolors /home/eprints/.config/dircolors.txt)
 

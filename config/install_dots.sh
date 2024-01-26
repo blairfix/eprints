@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get home dir
-h=/home/eprints
+h=$(pwd)
 
 # get directory of all install scripts
 find . -type f | grep 'install.sh' > tmp

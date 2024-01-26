@@ -4,7 +4,7 @@ config="/home/eprints/.config/nvim/"
 
 # copy to config
 mkdir -p $config
-cp init.vim gvim.vim $config
+cp init.vim $config
 
 # copy scripts
 cp gvim v /home/blair/bin
