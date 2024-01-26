@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# test rename
+#-------------------------------------------
+
+# get files containing number
+files=$( ls | grep '^[0-9]' | sort --version-sort )
+
+# output color
+RED='\033[0;31m'
+
+
+n=1;
+for f in $files; do
+    
+    # strip numbers from file
+    file_name=$( printf '%s\n' "${f//[[:digit:]]/}" )
+
+    # pad file number
+    file_number=$( printf %02d $n)
+
+    # new file name
+    file_new="$file_number""$file_name"
+
+    echo $(tput setaf 2) $f  $(tput setaf 5) '---->' $(tput setaf 4) $file_new $(tput setaf 7)
+
+    let n="$n+1"
+
+done
+
+
+
+# actually rename
+#-------------------------------------------
+
+echo Type GO to rename files
+read test 
+
+if [ $test == "GO" ] ; 
+then
+
+    echo renaming ...
+
+    n=1;
+    for f in $files; do
+	
+	# strip numbers from file
+	file_name=$( printf '%s\n' "${f//[[:digit:]]/}" )
+
+	# pad file number
+	file_number=$( printf %02d $n)
+
+	# new file name
+	file_new="$file_number""$file_name"
+	
+	# test if file names are different
+	# rename files
+	mv $f $file_new
+
+	let n="$n+1"
+
+    done
+
+fi
