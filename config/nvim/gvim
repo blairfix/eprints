@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# code to simulate the look of gvim in nvim in alacritty
+
+# get current host
+host=$(hostname)
+
+# server settings
+if [ $host == 'blair-server' ]
+then
+
+    alacritty \
+    -o "colors.primary.background='#ffffff'" \
+    -o "font.size=12" \
+    -o "font.offset.y=6" \
+    -e  nvim $1 \
+    -u /home/blair/.config/nvim/gvim.vim &
+
+else
+# laptop settings
+
+    alacritty \
+    -o "colors.primary.background='#ffffff'" \
+    -o "font.size=15" \
+    -o "font.offset.y=6" \
+    -e  nvim $1 \
+    -u /home/blair/.config/nvim/gvim.vim &
+
+fi
+
