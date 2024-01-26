@@ -6,15 +6,12 @@ config="/home/eprints/.config/nvim/"
 mkdir -p $config
 cp init.vim $config
 
-# copy scripts
-cp gvim v /home/eprints/bin
-
 # download themes
-cd ~/Downloads
+cd /home/eprints/Downloads
 git clone https://github.com/flazz/vim-colorschemes.git 
 
 cd vim-colorschemes
 cp -r * $config
 
-cd ~/Downloads
+cd /home/eprints/Downloads
 trash vim-colorschemes
