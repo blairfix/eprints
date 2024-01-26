@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # copy bashrc file to home 
-cp bashrc ~/
+cp bashrc /home/eprints
 
 # rename to dot file
-mv ~/bashrc ~/.bashrc
+mv /home/eprints/bashrc  /home/eprints/bashrc
 
 # cp dir colors
-cp dircolors.txt ~/.config
+mkdir /home/eprints/.config
+cp dircolors.txt  /home/eprints/.config
 
 # source bash file
 #exec bash
