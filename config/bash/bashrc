@@ -48,8 +48,8 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 #  ls aliases
-alias l='eza'
-alias lx='eza -l'
+alias l='ls'
+alias lx='ls -l'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
