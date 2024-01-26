@@ -1,10 +1,11 @@
 #!/bin/bash
 
+home="/home/eprints"
 
 # make dir
-mkdir -p ~/.fzf/shell
+mkdir -p "$home"/.fzf/shell
 
 # copy files
-cp fzf.bash ~/.fzf.bash
-cp shell/* ~/.fzf/shell/
+cp fzf.bash "$home"/.fzf.bash
+cp shell/* "$home"/.fzf/shell/
 

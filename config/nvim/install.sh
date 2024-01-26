@@ -1,6 +1,6 @@
 #!/bin/bash
 
-config="/home/blair/.config/nvim/"
+config="/home/eprints/.config/nvim/"
 
 # copy to config
 mkdir -p $config
