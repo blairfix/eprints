@@ -72,7 +72,7 @@ alias v='nvim'
 
 # add path
 export PATH=/home/eprints/bin:$PATH
-export PATH=/opt/eprints/bin:$PATH
+export PATH=/opt/eprints3/bin:$PATH
 
 # colors
 eval $(env TERM=xterm256-color dircolors /home/eprints/.config/dircolors.txt)
